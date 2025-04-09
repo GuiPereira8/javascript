@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro programa...</title>
+    <style>
+        body { /*Comentario em CSS */
+            background-color: rgb(105, 105, 174);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        h1 {
+            background-image: linear-gradient(48deg, #ffe5e5,yellow);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 4em;
+            text-align: center;
+            font-family: 'domine';
+        }
+
+        p {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1> <!--Comentario em HTML-->
+    <hr>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+
+    <script> //Comentario em JavaScript
+        var n1 = Number(window.prompt('Digite um número: '));
+        var n2 = Number(window.prompt('Digite outro número: '))
+        var soma = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${soma}`)
+        // + serve para adição
+        // + serve para concatenação
+        // (number + number) para adição
+        // (string + string) para concatenação
+    </script>
+</body>
+</html>
