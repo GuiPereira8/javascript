@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area {
+            font-weight: normal;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2rem;
+            background-color: deeppink;
+            color: white;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        Interaja...
+    </div>
+
+    <script>
+        let caixadiv = window.document.getElementById("area");
+        caixadiv.addEventListener('click', clicar);
+        caixadiv.addEventListener('mouseenter', entrar);
+        caixadiv.addEventListener('mouseout', saiu);
+
+        function clicar() {
+            caixadiv.innerText = 'Olá Mundo!';
+            caixadiv.style.backgroundColor = '#084B83'
+            // caixadiv.style.display = 'none' faz a caixa desaparecer
+        }
+
+        function entrar() {
+            caixadiv.innerText = 'Entrou';
+        }
+
+        function saiu() {
+            caixadiv.innerText = 'Saiu';
+            caixadiv.style.backgroundColor = 'deeppink'
+        }
+    </script>
+</body>
+</html>
