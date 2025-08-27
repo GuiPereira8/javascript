@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasileiro ou Estrangeiro?</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        span {
+            font-size: 1.2rem;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        input[type=button] {
+            width: 80px;
+            padding: 8px 1px;
+            border-radius: 12px;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+
+        input[type=button]:active {
+            background-color: rgb(218, 217, 217);
+        }
+
+        input[type=text] {
+            width: 150px;
+            padding: 5px;
+            font-size: 1.2rem;
+            border-radius: 20px;
+            border: 1px solid black;
+            outline: none;
+        }
+
+        label {
+            font-size: 1.2rem;
+        }
+
+        .container {
+            display: flex;
+            height: 220px;
+            border: 2px solid black;
+            border-radius: 3rem;
+            max-width: 320px;
+            margin: auto;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            gap: 15px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Brasileiro ou Estrangeiro?</h1>
+    <div class="container">
+        <label for="ipaís">Escreva de qual país Você é:</label>
+        <input type="text" name="npaís" id="ipaís">
+        <input type="button" value="Verificar" onclick="clicar()">
+    </div>
+
+
+    <h2>Resposta:</h2>
+    <span id="saida"></span>
+
+    <script>
+        let país = document.getElementById('ipaís');
+        let resultado = document.getElementById('saida');
+        function clicar() {
+            resultado.innerHTML = `Vivendo em <strong>${país.value}</strong>`
+
+            if (país.value == 'Brasil') {
+                resultado.innerHTML += `<br> <br> Você é <strong>Brasileiro!</strong>`
+            } else {
+                resultado.innerHTML += `<br> <br> Você é <strong>Estrangeiro!</strong>`
+            }
+        }
+    </script>
+</body>
+
+</html>
