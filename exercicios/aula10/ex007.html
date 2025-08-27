@@ -29,12 +29,22 @@
 
     <script>
         function somar() {
+
+            // As Variáveis "tn1" e "tn2" vai guardar os valores digitados da caixa input.
             let tn1 = window.document.getElementById('txtn1');
             let tn2 = window.document.querySelector('input#txtn2');
+
+            // A variável "res" ser usada para escrever o resultado na tela.
             let res = window.document.querySelector('div#res');
+
+            // As variáveis "num1" e "num2" vai converter os valores recebidos da caixa input em números.
             let num1 = Number(tn1.value);
             let num2 = Number(tn2.value);
+
+            // A variável "soma" vai fazer a soma dos números recebidos.
             let soma = num1 + num2;
+
+            // O comando abaixo vai mostrar o resultado escrito na tela.
             res.innerHTML = `A soma entre ${num1} e ${num2} é igual a: <strong>${soma}</strong>`;
         }
     </script>
