@@ -79,7 +79,11 @@
             if (país.value == 'Brasil') {
                 resultado.innerHTML += `<br> <br> Você é <strong>Brasileiro!</strong>`
             } else {
-                resultado.innerHTML += `<br> <br> Você é <strong>Estrangeiro!</strong>`
+                if (país.value == 'brasil') {
+                    resultado.innerHTML += `<br> <br> Você é <strong>Brasileiro!</strong>`
+                } else {
+                    resultado.innerHTML += `<br> <br> Você é <strong>Estrangeiro!</strong>`
+                }
             }
         }
     </script>
