@@ -24,7 +24,7 @@ section {
     border-radius: 1rem;
     padding: 15px;
     max-width: 520px;
-    height: 520px;
+    height: 350px;
     margin: 0 auto;
     box-shadow: 3px 3px 8px rgba(0, 0, 92, 0.5), -3px -3px 8px rgba(255, 255, 255, 0.5);
 }
