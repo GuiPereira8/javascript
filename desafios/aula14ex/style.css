@@ -14,7 +14,7 @@ body {
 
 header > h1 {
     color: white;
-    font-size: 3rem;
+    font-size: 3.2rem;
     padding: 10px 15px;
     text-align: center;
 }
@@ -24,9 +24,18 @@ section {
     border-radius: 1rem;
     padding: 15px;
     max-width: 520px;
-    height: 350px;
     margin: 0 auto;
-    box-shadow: 3px 3px 8px rgba(0, 0, 92, 0.5), -3px -3px 8px rgba(255, 255, 255, 0.5);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5), -3px -3px 8px rgba(255, 255, 255, 0.5);
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.divFotos {
+    padding: 10px;
+    font-size: 1.2rem;
 }
 
 footer {
@@ -62,8 +71,4 @@ footer p a::after {
 
 footer p a:hover::after {
     width: 100%;
-}
-
-footer p a:hover {
-    color: rgba(0, 0, 139, 0.836);
 }

@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo de Exercício</title>
+    <title>Hora do dia</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="carregar()">
     <header>
-        <h1>Título</h1>
+        <h1>Hora do Dia</h1>
     </header>
     <section>
-        <div>
-            Testando.....
+        <div id="msg" class="divFotos">
+            Mensagem..
         </div>
-        <div>
-            Olá
+        <div id="foto" class="divFotos">
+            <img id="imagem" src="images/foto-manha.png" alt="foto do dia">
         </div>
     </section>
     <footer>
-        <p>&copy; <a href="https://www.github.com/guipereira8" target="_blank">Guipereira8</a></p>
+        <p>  <a id="copyname" href="https://www.github.com/guipereira8" target="_blank">&copy; Guipereira8</a></p>
     </footer>
 
     <script src="script.js"></script>
