@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -57,7 +56,6 @@
         }
     </style>
 </head>
-
 <body>
     <h1>Brasileiro ou Estrangeiro?</h1>
     <div class="container">
@@ -71,20 +69,27 @@
     <span id="saida"></span>
 
     <script>
-        let país = document.getElementById('ipaís');
+        const inputP = document.getElementById('ipaís');
         let resultado = document.getElementById('saida');
         function clicar() {
-            resultado.innerHTML = `Vivendo em <strong>${país.value}</strong>`
-
-            if (país.value == 'Brasil') {
+            let textoOriginal = inputP.value;
+            let textoMinusculo = textoOriginal.toLowerCase();
+            resultado.innerHTML = `Vivendo em <strong>${textoMinusculo}</strong>`
+            if (textoMinusculo == "brasil") {
                 resultado.innerHTML += `<br> <br> Você é <strong>Brasileiro!</strong>`
             } else {
-                if (país.value == 'brasil') {
-                    resultado.innerHTML += `<br> <br> Você é <strong>Brasileiro!</strong>`
-                } else {
-                    resultado.innerHTML += `<br> <br> Você é <strong>Estrangeiro!</strong>`
-                }
+                resultado.innerHTML += `<br> <br> Você é <strong>Estrangeiro!</strong>`
             }
+
+            // if (país.value == 'Brasil') {
+            //     resultado.innerHTML += `<br> <br> Você é <strong>Brasileiro!</strong>`
+            // } else {
+            //     if (país.value == 'brasil') {
+            //         resultado.innerHTML += `<br> <br> Você é <strong>Brasileiro!</strong>`
+            //     } else {
+            //         resultado.innerHTML += `<br> <br> Você é <strong>Estrangeiro!</strong>`
+            //     }
+            // }
         }
     </script>
 </body>
